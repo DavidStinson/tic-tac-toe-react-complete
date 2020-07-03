@@ -4,14 +4,14 @@ import "./Header.css";
 const Header = (props) => {
   return (
     <header className="header">
-      {" "}
-      <p>
+      <h1 className="heading">
         tic-
-        <span role="img" aria-label="emoji of a thumb tac">
+        <span role="img" aria-label="thumb tac emoji">
           📌
         </span>
         -toe
-      </p>
+      </h1>
+      <h2 className="sub-head">tic-tac-toe with emoji office supplies</h2>
     </header>
   );
 };
