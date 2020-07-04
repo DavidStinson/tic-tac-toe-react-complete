@@ -6,6 +6,7 @@ import GameBoard from "./components/App/GameBoard/GameBoard"
 import Message from "./components/App/Message/Message"
 import TextInputPlayerOne from "./components/App/TextInputPlayerOne/TextInputPlayerOne"
 import TextInputPlayerTwo from "./components/App/TextInputPlayerTwo/TextInputPlayerTwo"
+import StartGameButton from "./components/App/StartGameButton/StartGameButton"
 
 class App extends Component {
   // state = {
@@ -25,6 +26,7 @@ class App extends Component {
         </div>
         <GameBoard />
         <Message />
+        <StartGameButton />
       </div>
     );
   }
