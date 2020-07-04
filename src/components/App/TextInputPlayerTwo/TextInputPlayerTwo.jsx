@@ -1,11 +1,14 @@
 import React from "react";
 
-import styles from "./TextInputPlayerTwo.module.css"
-
 const TextInput = (props) => {
   return (
     <div>
-      <p className={styles.label}>Text Input - Player 2</p>
+      <p className="input-label">
+        Text Input - Player 2{" "}
+        <span role="img" aria-label="thumb tac emoji">
+          📎
+        </span>
+      </p>
     </div>
   );
 };

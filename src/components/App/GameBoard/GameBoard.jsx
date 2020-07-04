@@ -1,8 +1,6 @@
 import React from "react";
 import Cell from "../Cell/Cell";
 
-import "./GameBoard.module.css";
-
 const GameBoard = () => (
   <div className="game-board">
     <Cell />
