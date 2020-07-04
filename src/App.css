@@ -61,6 +61,8 @@ body {
   height: clamp(11rem, 16vmin, 19vh);
   font-size: clamp(6rem, calc(5rem + 5vw), 10vh);
   line-height: clamp(11rem, 16vmin, 19vh);
+  text-align: center;
+  
 }
 
 .message {
