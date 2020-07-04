@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "./Cell.css"
+import "./Cell.module.css"
 
 const Cell = (props) => {
   return ( <div className="cell">Cell</div> );
