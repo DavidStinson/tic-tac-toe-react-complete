@@ -4,6 +4,8 @@ import "./App.css";
 import Header from "./components/common/structure/Header/Header"
 import GameBoard from "./components/App/GameBoard/GameBoard"
 import Message from "./components/App/Message/Message"
+import TextInputPlayerOne from "./components/App/TextInputPlayerOne/TextInputPlayerOne"
+import TextInputPlayerTwo from "./components/App/TextInputPlayerTwo/TextInputPlayerTwo"
 
 class App extends Component {
   // state = {
@@ -13,12 +15,15 @@ class App extends Component {
   // }
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <div className="app-header">
           <Header/>
         </div>
-        <div className="app-player-names"></div>
-        <GameBoard board={this.state.board}/>
+        <div className="app-player-names">
+          <TextInputPlayerOne />
+          <TextInputPlayerTwo />
+        </div>
+        <GameBoard />
         <Message />
       </div>
     );

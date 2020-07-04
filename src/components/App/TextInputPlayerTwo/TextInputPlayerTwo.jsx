@@ -1,11 +1,11 @@
 import React from "react";
 
-import "./TextInputPlayerTwo.module.css"
+import styles from "./TextInputPlayerTwo.module.css"
 
 const TextInput = (props) => {
   return (
     <div>
-      <p>Text Input - Player 2</p>
+      <p className={styles.label}>Text Input - Player 2</p>
     </div>
   );
 };

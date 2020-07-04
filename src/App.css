@@ -2,7 +2,7 @@ body {
   background-color: #d3d3d3;
 }
 
-.App {
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +17,6 @@ body {
   margin: 1.5rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 

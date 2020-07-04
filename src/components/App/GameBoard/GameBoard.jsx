@@ -3,7 +3,7 @@ import Cell from "../Cell/Cell";
 
 import "./GameBoard.module.css";
 
-const GameBoard = ({ board }) => (
+const GameBoard = () => (
   <div className="game-board">
     <Cell />
     <Cell />
