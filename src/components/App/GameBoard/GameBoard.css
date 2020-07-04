@@ -1,0 +1,7 @@
+.game-board {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(3.2rem + clamp(11rem, 16vmin, 19vh) * 3);
+  margin: 2.5rem 0;
+}

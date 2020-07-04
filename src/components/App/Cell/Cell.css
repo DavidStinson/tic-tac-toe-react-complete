@@ -1,0 +1,9 @@
+.cell {
+  border: 8px solid #3e3e3e;
+  margin: -8px -8px 0 0;
+  padding: 0;
+  width: clamp(11rem, 16vmin, 19vh);
+  height: clamp(11rem, 16vmin, 19vh);
+  font-size: clamp(6rem, calc(5rem + 5vw), 10vh);
+  line-height: clamp(11rem, 16vmin, 19vh);
+}

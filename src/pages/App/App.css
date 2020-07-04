@@ -1,0 +1,22 @@
+body {
+  background-color: #d3d3d3;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-header {
+  margin-top: 1.2rem;
+  width: 100%;
+}
+
+.app-player-names {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
