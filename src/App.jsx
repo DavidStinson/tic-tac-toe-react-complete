@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import Header from "./components/common/structure/Header/Header"
-import GameBoard from "./components/App/GameBoard/GameBoard"
-import Message from "./components/App/Message/Message"
-import TextInputPlayerOne from "./components/App/TextInputPlayerOne/TextInputPlayerOne"
-import TextInputPlayerTwo from "./components/App/TextInputPlayerTwo/TextInputPlayerTwo"
-import StartGameButton from "./components/App/StartGameButton/StartGameButton"
+import Header from "./components/common/structure/Header/Header";
+import GameBoard from "./components/App/GameBoard/GameBoard";
+import Message from "./components/App/Message/Message";
+import TextInputPlayerOne from "./components/App/TextInputPlayerOne/TextInputPlayerOne";
+import TextInputPlayerTwo from "./components/App/TextInputPlayerTwo/TextInputPlayerTwo";
+import StartGameButton from "./components/App/StartGameButton/StartGameButton";
 
 const winCombos = [
   [0, 1, 2],
@@ -17,16 +17,16 @@ const winCombos = [
   [2, 5, 8],
   [0, 4, 8],
   [2, 4, 6],
-]
+];
 
 class App extends Component {
   state = {
     gameBoard: [],
     player: -1,
     winner: 0,
-    playerOne: "thumb tack",
-    playerTwo: "paper clip"
-  }
+    playerOneName: "thumb tack",
+    playerTwoName: "paper clip",
+  };
 
   winner = 0;
 
@@ -34,14 +34,18 @@ class App extends Component {
     return (
       <div className="app">
         <div className="app-header">
-          <Header/>
+          <Header />
         </div>
         <div className="app-player-names">
           <TextInputPlayerOne />
           <TextInputPlayerTwo />
         </div>
-        <GameBoard />
-        <Message />
+        <GameBoard gameBoard={this.state.gameBoard} />
+        <Message
+          playerOneName={this.state.playerOneName}
+          playerTwoName={this.state.playerTwoName}
+          player={this.state.player}
+        />
         <StartGameButton />
       </div>
     );

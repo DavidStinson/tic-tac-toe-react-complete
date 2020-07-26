@@ -1,17 +1,11 @@
 import React from "react";
 import Cell from "../Cell/Cell";
 
-const GameBoard = () => (
+const GameBoard = (props) => (
   <div className="game-board">
-    <Cell />
-    <Cell />
-    <Cell />
-    <Cell />
-    <Cell />
-    <Cell />
-    <Cell />
-    <Cell />
-    <Cell />
+    {props.gameBoard.map((cellOwner) => (
+      <Cell cellOwner={cellOwner}/>
+    ))}
   </div>
 );
 
